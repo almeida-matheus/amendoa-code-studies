@@ -6,7 +6,7 @@ import classNames from 'classnames/bind'
 const style = classNames.bind(css)
 
 const Card = ({ type }) => (
-    <div className={style({ Card: true, [`--${type}`]: true })}>card</div>
+    <div className={style({ Card: true, [`--${type}`]: true })} />
 )
 
 Card.propTypes = {

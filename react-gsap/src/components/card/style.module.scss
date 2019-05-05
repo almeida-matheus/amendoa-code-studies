@@ -1,21 +1,23 @@
+@import '~styles/config';
+
 .Card {
     width: 100%;
     height: 160px;
     margin: 16px 0px 16px 0px;
 
     &.--I {
-        background: red;
+        background: $color-primary-I;
     }
 
     &.--II {
-        background: blue;
+        background: $color-primary-II;
     }
 
     &.--III {
-        background: green;
+        background: $color-primary-III;
     }
 
     &.--IV {
-        background: yellow;
+        background: $color-primary-IV;
     }
 }
