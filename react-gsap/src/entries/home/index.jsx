@@ -1,10 +1,11 @@
 import React from 'react'
-import { Card, Button } from 'components'
+import { Card, Button, Drawer } from 'components'
 import css from './style.module.scss'
 
 export default () => (
     <section className={css.Home}>
         <div className="container">
+            <Drawer />
             <div
                 className={
                     css['Home__actions-container'] + ' row justify-content-end'

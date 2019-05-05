@@ -1,0 +1,12 @@
+@import '~styles/config';
+
+.Drawer {
+    position: absolute;
+    height: 100%;
+    width: 400px;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background: $color-primary-II;
+    padding-top: 16px;
+}
