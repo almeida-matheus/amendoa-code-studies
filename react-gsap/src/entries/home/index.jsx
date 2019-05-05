@@ -1,9 +1,23 @@
 import React from 'react'
-import { Card } from 'components'
+import { Card, Button } from 'components'
+import css from './style.module.scss'
 
 export default () => (
-    <div>
+    <section className={css.Home}>
         <div className="container">
+            <div
+                className={
+                    css['Home__actions-container'] + ' row justify-content-end'
+                }
+            >
+                <div className="col-auto">
+                    <Button
+                        onClick={() => {
+                            console.log('teste')
+                        }}
+                    />
+                </div>
+            </div>
             <div className="row">
                 <div className="col-12 col-sm-6 col-md-4">
                     <Card type="I" />
@@ -43,5 +57,5 @@ export default () => (
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 )
