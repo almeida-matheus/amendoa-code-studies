@@ -1,3 +1,7 @@
-# React and gsap simple app
+# React and Tween
 
-React and gsap simple app
+A simple app with react.js and tweenmax
+
+### Demo
+
+https://amendoa-test-react-gsap.surge.sh

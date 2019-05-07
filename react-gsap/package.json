@@ -14,7 +14,9 @@
         "start": "react-app-rewired start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "deploy": "yarn build && mv build/index.html build/200.html && surge build https://amendoa-test-react-gsap.surge.sh",
+        "teardown": "surge teardown https://amendoa-test-react-gsap.surge.sh"
     },
     "eslintConfig": {
         "extends": "react-app"
