@@ -7,7 +7,7 @@ function App() {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={HomeEntry} />
-                <Route path="/details" component={DetailsEntry} />
+                <Route path="/details/:color" component={DetailsEntry} />
                 <Route render={() => <Redirect to="/" />} />
             </Switch>
         </BrowserRouter>

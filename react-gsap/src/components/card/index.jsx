@@ -5,17 +5,26 @@ import classNames from 'classnames/bind'
 
 const style = classNames.bind(css)
 
-const Card = ({ type }) => (
+const Card = ({ type, onClick, children }) => (
     <div
-        onClick={() => {
-            console.log('card')
-        }}
-        className={style({ Card: true, [`--${type}`]: true })}
-    />
+        onClick={onClick}
+        className={style({
+            Card: true,
+            [`--${type}`]: true,
+        })}
+    >
+        {children}
+    </div>
 )
+
+Card.defaultProps = {
+    children: null,
+}
 
 Card.propTypes = {
     type: PropTypes.oneOf(['I', 'II', 'III', 'IV']),
+    onClick: PropTypes.func.isRequired,
+    children: PropTypes.node,
 }
 
 export default Card

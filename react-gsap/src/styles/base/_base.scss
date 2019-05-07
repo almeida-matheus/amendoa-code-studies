@@ -1,3 +1,9 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+body,
+html,
+#root {
+    height: 100%;
 }
