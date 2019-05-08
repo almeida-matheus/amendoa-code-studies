@@ -22,7 +22,8 @@
         "quotes": ["error", "single"],
         "semi": ["error", "never"],
         "no-console": 0,
-        "react/display-name": 0
+        "react/display-name": 0,
+        "indent": 0
     },
     "settings": {
         "import/resolver": {
