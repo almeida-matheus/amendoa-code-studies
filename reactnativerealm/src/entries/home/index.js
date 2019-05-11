@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'src/components'
+import { Button, Card } from 'src/components'
 import styled from 'styled-components'
 
 const Wrapper = styled.SafeAreaView`
@@ -14,13 +14,24 @@ const ActionsContainer = styled.View`
     left: 0;
     right: 0;
 `
-const ListContainer = styled.View`
-    background-color: red;
+const ListContainer = styled.ScrollView`
+    margin-bottom: 72px;
 `
 
 export default () => (
     <Wrapper>
-        <ListContainer />
+        <ListContainer showsVerticalScrollIndicator={false}>
+            {Array(20)
+                .fill({})
+                .map(() => (
+                    <Card
+                        model={{
+                            name: 'teste',
+                            city: 'teste city',
+                        }}
+                    />
+                ))}
+        </ListContainer>
         <ActionsContainer>
             <Button primary />
         </ActionsContainer>
